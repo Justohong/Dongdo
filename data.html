@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자료실 - 동도기공</title>
+    <link href="https://fonts.googleapis.com/css2?display=swap&family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="style.css" rel="stylesheet"> <!-- We will create this file later for shared styles -->
+    <style>
+      body {
+        font-family: "Noto Sans KR", "Be Vietnam Pro", sans-serif;
+        background-color: #101923;
+        color: #ffffff;
+      }
+      .content-section {
+        padding-top: 5vh; /* Adjusted padding for subpages */
+        position: relative;
+        z-index: 1;
+        background-color: #101923;
+      }
+      /* Basic header styling, to be refined */
+      header {
+        background-color: #101923/80;
+        backdrop-filter: blur(10px);
+      }
+    </style>
+</head>
+<body class="bg-[#101923]">
+    <div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden">
+        <!-- Header (similar to index.html, but will be adapted) -->
+        <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#223449]/50 bg-[#101923]/80 px-6 sm:px-10 py-4 backdrop-blur-md">
+            <div class="flex items-center gap-3 sm:gap-4 text-white">
+                <div class="size-6 sm:size-8">
+                    <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+                    </svg>
+                </div>
+                <h2 class="text-white text-xl sm:text-2xl font-bold leading-tight tracking-[-0.015em]">Dongdo Engineering</h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-6">
+                <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="index.html">메인</a>
+                <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="company.html">회사소개</a>
+                <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="services.html">사업소개</a>
+                <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="data.html">자료실</a>
+                <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="contact.html">고객지원</a>
+            </nav>
+            <a href="contact.html" class="flex min-w-[90px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c77f2] hover:bg-[#0a62c4] transition-colors text-white text-sm font-semibold leading-normal tracking-[0.015em]">
+                <span class="truncate">견적 문의</span>
+            </a>
+        </header>
+
+        <main class="flex-grow pt-20 sm:pt-24"> <!-- Added padding-top to avoid overlap with fixed header -->
+            <div class="content-section">
+                <div class="layout-container flex flex-col max-w-5xl mx-auto px-6 sm:px-10 py-16 sm:py-24">
+                    <section id="data-room" class="mb-16 sm:mb-24 scroll-mt-20">
+                        <h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-[-0.033em] mb-10 text-center">
+                            자료실
+                        </h1>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                            <!-- Item 1 -->
+                            <div class="flex flex-col gap-4 rounded-lg bg-[#182534] overflow-hidden group">
+                                <div class="w-full bg-gray-700 aspect-[4/3] group-hover:scale-105 transition-transform duration-300 flex items-center justify-center overflow-hidden">
+                                    <img src="https://via.placeholder.com/400x300.png?text=자료이미지+1" alt="신기술 OOO공법 시공사례 이미지" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-5 pt-3">
+                                    <h3 class="text-white text-lg font-semibold leading-normal mb-1">신기술 OOO공법 시공사례</h3>
+                                    <p class="text-[#90abcb] text-sm font-normal leading-relaxed">OOO공법을 적용한 최신 시공 현장 사진과 결과 보고서입니다. 혁신적인 기술 적용 사례를 확인하세요.</p>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="flex flex-col gap-4 rounded-lg bg-[#182534] overflow-hidden group">
+                                <div class="w-full bg-gray-700 aspect-[4/3] group-hover:scale-105 transition-transform duration-300 flex items-center justify-center overflow-hidden">
+                                    <img src="https://via.placeholder.com/400x300.png?text=자료이미지+2" alt="현장 안전관리 시스템 소개 이미지" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-5 pt-3">
+                                    <h3 class="text-white text-lg font-semibold leading-normal mb-1">현장 안전관리 시스템 소개</h3>
+                                    <p class="text-[#90abcb] text-sm font-normal leading-relaxed">건설 현장의 안전을 최우선으로 생각하는 동도기공의 첨단 안전관리 시스템을 소개합니다.</p>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="flex flex-col gap-4 rounded-lg bg-[#182534] overflow-hidden group">
+                                <div class="w-full bg-gray-700 aspect-[4/3] group-hover:scale-105 transition-transform duration-300 flex items-center justify-center overflow-hidden">
+                                   <img src="https://via.placeholder.com/400x300.png?text=자료이미지+3" alt="드론을 활용한 정밀 측량 기술 이미지" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-5 pt-3">
+                                    <h3 class="text-white text-lg font-semibold leading-normal mb-1">드론을 활용한 정밀 측량 기술</h3>
+                                    <p class="text-[#90abcb] text-sm font-normal leading-relaxed">최신 드론 기술을 활용한 정밀 측량 방법과 현장 적용 사례를 확인해보세요.</p>
+                                </div>
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="flex flex-col gap-4 rounded-lg bg-[#182534] overflow-hidden group">
+                                <div class="w-full bg-gray-700 aspect-[4/3] group-hover:scale-105 transition-transform duration-300 flex items-center justify-center overflow-hidden">
+                                    <img src="https://via.placeholder.com/400x300.png?text=자료이미지+4" alt="친환경 건설 자재 보고서 이미지" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-5 pt-3">
+                                    <h3 class="text-white text-lg font-semibold leading-normal mb-1">친환경 건설 자재 보고서</h3>
+                                    <p class="text-[#90abcb] text-sm font-normal leading-relaxed">지속 가능한 건설을 위한 동도기공의 친환경 자재 사용 및 연구 현황 보고서입니다.</p>
+                                </div>
+                            </div>
+                            <!-- Item 5 -->
+                            <div class="flex flex-col gap-4 rounded-lg bg-[#182534] overflow-hidden group">
+                                <div class="w-full bg-gray-700 aspect-[4/3] group-hover:scale-105 transition-transform duration-300 flex items-center justify-center overflow-hidden">
+                                    <img src="https://via.placeholder.com/400x300.png?text=자료이미지+5" alt="스마트 건설 기술 동향 이미지" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-5 pt-3">
+                                    <h3 class="text-white text-lg font-semibold leading-normal mb-1">스마트 건설 기술 동향</h3>
+                                    <p class="text-[#90abcb] text-sm font-normal leading-relaxed">BIM, IoT, AI 등 최신 스마트 건설 기술의 동향과 동도기공의 적용 계획을 소개합니다.</p>
+                                </div>
+                            </div>
+                            <!-- Item 6 -->
+                            <div class="flex flex-col gap-4 rounded-lg bg-[#182534] overflow-hidden group">
+                                <div class="w-full bg-gray-700 aspect-[4/3] group-hover:scale-105 transition-transform duration-300 flex items-center justify-center overflow-hidden">
+                                   <img src="https://via.placeholder.com/400x300.png?text=자료이미지+6" alt="주요 프로젝트 포트폴리오 이미지" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-5 pt-3">
+                                    <h3 class="text-white text-lg font-semibold leading-normal mb-1">주요 프로젝트 포트폴리오</h3>
+                                    <p class="text-[#90abcb] text-sm font-normal leading-relaxed">동도기공이 수행한 주요 건설 프로젝트의 상세 포트폴리오를 다운로드하실 수 있습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 text-base sm:text-lg font-normal leading-relaxed mt-10 text-center">
+                            더 많은 자료는 지속적으로 업데이트될 예정입니다. 문의사항은 고객지원 페이지를 이용해주십시오.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-[#182534] border-t border-[#223449]/50 mt-auto"> <!-- Ensure footer is at the bottom -->
+            <div class="max-w-5xl mx-auto px-6 sm:px-10 py-10 sm:py-16">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6 @container">
+                    <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
+                        <a class="text-[#90abcb] hover:text-white text-sm font-normal leading-normal transition-colors" href="#">개인정보처리방침</a>
+                        <a class="text-[#90abcb] hover:text-white text-sm font-normal leading-normal transition-colors" href="#">이용약관</a>
+                    </div>
+                    <div class="flex justify-center gap-5">
+                        <!-- Social media icons can be added here if needed -->
+                    </div>
+                </div>
+                <p class="text-[#90abcb] text-sm font-normal leading-normal text-center mt-8">© 2024 Dongdo Engineering. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
