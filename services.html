@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사업소개 - 동도기공</title>
+    <link href="https://fonts.googleapis.com/css2?display=swap&family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;900" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="style.css" rel="stylesheet"> <!-- We will create this file later for shared styles -->
+    <style>
+      body {
+        font-family: "Noto Sans KR", "Be Vietnam Pro", sans-serif;
+        background-color: #101923;
+        color: #ffffff;
+      }
+      .content-section {
+        padding-top: 5vh; /* Adjusted padding for subpages */
+        position: relative;
+        z-index: 1;
+        background-color: #101923;
+      }
+      /* Basic header styling, to be refined */
+      header {
+        background-color: #101923/80;
+        backdrop-filter: blur(10px);
+      }
+    </style>
+</head>
+<body class="bg-[#101923]">
+    <div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden">
+        <!-- Header (similar to index.html, but will be adapted) -->
+        <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#223449]/50 bg-[#101923]/80 px-6 sm:px-10 py-4 backdrop-blur-md">
+            <div class="flex items-center gap-3 sm:gap-4 text-white">
+                <div class="size-6 sm:size-8">
+                    <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+                    </svg>
+                </div>
+                <h2 class="text-white text-xl sm:text-2xl font-bold leading-tight tracking-[-0.015em]">Dongdo Engineering</h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-6">
+                <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="index.html">메인</a>
+                <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="company.html">회사소개</a>
+                <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="services.html">사업소개</a>
+                <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="data.html">자료실</a>
+                <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="contact.html">고객지원</a>
+            </nav>
+            <a href="contact.html" class="flex min-w-[90px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c77f2] hover:bg-[#0a62c4] transition-colors text-white text-sm font-semibold leading-normal tracking-[0.015em]">
+                <span class="truncate">견적 문의</span>
+            </a>
+        </header>
+
+        <main class="flex-grow pt-20 sm:pt-24"> <!-- Added padding-top to avoid overlap with fixed header -->
+            <div class="content-section">
+                <div class="layout-container flex flex-col max-w-5xl mx-auto px-6 sm:px-10 py-16 sm:py-24">
+                    <section id="services-introduction" class="mb-16 sm:mb-24 scroll-mt-20">
+                        <h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-[-0.033em] mb-10 text-center">
+                            사업소개
+                        </h1>
+                        <!-- Sub-navigation for services sections -->
+                        <nav class="flex justify-center gap-4 mb-12">
+                            <a href="#method-introduction" class="text-gray-300 hover:text-white text-lg font-medium leading-normal transition-colors px-4 py-2 rounded-md bg-[#182534] hover:bg-[#0c77f2]">공법소개</a>
+                            <a href="#method-features" class="text-gray-300 hover:text-white text-lg font-medium leading-normal transition-colors px-4 py-2 rounded-md bg-[#182534] hover:bg-[#0c77f2]">공법의특징</a>
+                        </nav>
+
+                        <div id="method-introduction" class="scroll-mt-20 mb-12">
+                            <h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-[-0.015em] mb-6 sm:mb-8">공법소개</h2>
+                            <p class="text-gray-300 text-base sm:text-lg font-normal leading-relaxed mb-4">
+                                동도기공은 최첨단 기술과 다년간의 노하우를 결합하여 혁신적인 건설 공법을 개발하고 현장에 적용하고 있습니다. 당사의 주요 공법인 'DD-Method'는 안정성과 효율성을 극대화하여 공기 단축 및 비용 절감 효과를 제공합니다.
+                            </p>
+                            <p class="text-gray-300 text-base sm:text-lg font-normal leading-relaxed mb-4">
+                                DD-Method는 지반 강화, 구조물 안정화, 그리고 특수 환경 조건에서의 시공 등 다양한 분야에 적용 가능하며, 각 프로젝트의 특성에 맞춘 최적화된 솔루션을 제공합니다. 이 공법은 특히 도심지 공사나 환경 보호가 중요한 지역에서 그 우수성을 인정받고 있습니다.
+                            </p>
+                            <p class="text-gray-300 text-base sm:text-lg font-normal leading-relaxed">
+                                또한, 지속적인 연구개발을 통해 기존 공법을 개선하고 새로운 기술을 도입하여 건설 산업의 발전에 기여하고 있습니다. 아래에서는 당사의 주요 공법과 그 특징에 대해 더 자세히 알아보실 수 있습니다.
+                            </p>
+                        </div>
+
+                        <div id="method-features" class="scroll-mt-20">
+                            <h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-[-0.015em] mb-6 sm:mb-8">공법의특징</h2>
+                            <p class="text-gray-300 text-base sm:text-lg font-semibold leading-relaxed mb-4">DD-Method의 주요 특징:</p>
+                            <ul class="list-disc list-inside text-gray-300 text-base sm:text-lg font-normal leading-relaxed">
+                                <li class="mb-2"><strong>경제성:</strong> 최적화된 설계와 시공 과정으로 기존 공법 대비 약 15% 비용 절감 효과.</li>
+                                <li class="mb-2"><strong>안정성:</strong> 강화된 지지력과 내구성으로 구조물의 장기적인 안정성 확보.</li>
+                                <li class="mb-2"><strong>시공성:</strong> 공정 단순화 및 표준화를 통해 공사 기간 평균 20% 단축.</li>
+                                <li class="mb-2"><strong>친환경성:</strong> 소음 및 진동 최소화, 건설 폐기물 발생량 감소 등 환경 친화적 공법.</li>
+                                <li class="mb-2"><strong>적용 범위:</strong> 연약지반, 급경사지, 협소 공간 등 다양한 현장 조건에 적용 가능.</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-[#182534] border-t border-[#223449]/50 mt-auto"> <!-- Ensure footer is at the bottom -->
+            <div class="max-w-5xl mx-auto px-6 sm:px-10 py-10 sm:py-16">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6 @container">
+                    <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
+                        <a class="text-[#90abcb] hover:text-white text-sm font-normal leading-normal transition-colors" href="#">개인정보처리방침</a>
+                        <a class="text-[#90abcb] hover:text-white text-sm font-normal leading-normal transition-colors" href="#">이용약관</a>
+                    </div>
+                    <div class="flex justify-center gap-5">
+                        <!-- Social media icons can be added here if needed -->
+                    </div>
+                </div>
+                <p class="text-[#90abcb] text-sm font-normal leading-normal text-center mt-8">© 2024 Dongdo Engineering. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
